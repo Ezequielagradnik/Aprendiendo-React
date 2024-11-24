@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Tic Tac Toe Game Styles */
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  border: 3px solid #333;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #e8e8e8;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #d1d1d1;
+}
+
+.cell.x {
+  color: #f44336; /* Red color for 'X' */
+}
+
+.cell.o {
+  color: #2196f3; /* Blue color for 'O' */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #483688;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #888;
+}
